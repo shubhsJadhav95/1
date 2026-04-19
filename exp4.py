@@ -19,8 +19,10 @@ for t in nodes:
 avg = sum(valid) / len(valid)
 print("\nAVERAGE:", avg)
 
-print("\nADJUSTMENTS")
+print("\nADJUSTMENTS & NEW TIMES")
 for t in nodes:
-    print("Adjust:", round(avg - t, 2))
+    adjustment = round(avg - t, 2)
+    new_time = round(t + adjustment, 2)
+    print("Original:", t, "| Adjust:", adjustment, "| New Time:", new_time)
 
 print("\nSYNC DONE")

@@ -1,4 +1,4 @@
-servers = ["S1", "S2", "S3"]
+servers = ["S1", "S2", "S3","s4","s5"]
 index = 0
 
 def get_server():
@@ -8,5 +8,5 @@ def get_server():
     return server
 
 # Simulate requests
-for i in range(6):
+for i in range(4):
     print(f"Request {i} -> {get_server()}")

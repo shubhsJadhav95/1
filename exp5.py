@@ -16,8 +16,8 @@ def election(p):
         return election(max(higher))
 
 # suppose coordinator (5) fails
-processes.remove(4)
+processes.remove(5)
 
-new_coordinator = election(2)
+new_coordinator = election(4)
 
 print("\nNew Coordinator:", new_coordinator)
